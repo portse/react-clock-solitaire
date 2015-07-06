@@ -1,0 +1,87 @@
+body {
+  margin-top: 20px;
+}
+
+.well.status {
+  background-color: #D8D8D8;
+  text-align: center; 
+  font-family: 'arial black'; 
+  font-weight: bold; 
+  font-size: 22pt;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.pile {
+  line-height: 4px;
+  min-height: 60px;
+  height: 60px;
+}
+
+.card {
+  float: left;
+  width: 90%;
+  background-color: #000000;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  font-family:'arial black';
+  font-size: 22pt;
+  font-weight: bolder;
+  color: #996600;
+  text-align: center;
+  line-height: 44px;
+  cursor: pointer;
+  -webkit-user-select: none;       
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  -o-user-select: none;
+  user-select: none; 
+}
+
+.card.flipped {
+  background-image: none;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  color: #996600;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.card.danger {
+  background-image: none;
+  background-color: #CC3333; 
+  border: 1px solid #000000;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.card.expired {
+  background-image: none;
+  background-color: #F0F0F0; 
+  color: #C8C8C8; 
+  border: 1px solid #C8C8C8;
+}
+
+.card:not(:first-child) {
+  margin-left: -87%;
+}
+
+@media screen and (min-width:  640px) {
+  body {
+    margin-top: 20px;
+    margin-left: 20%; 
+    margin-right: 20%;  
+  }
+}
+
+@media screen and (min-width:  1350px) {
+  body {
+    margin-top: 20px;
+    margin-left: 33%; 
+    margin-right: 33%;  
+  }
+}
+
+
+
+
+
