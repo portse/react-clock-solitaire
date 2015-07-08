@@ -1,6 +1,6 @@
 var _ = require('underscore');
 
-exports.gameStatus = {
+exports.GameStatus = {
 	WIN: 'WINNER, WINNER!!',
 	LOSE: 'You lose! GAME OVER.'
 };

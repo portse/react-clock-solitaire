@@ -99,7 +99,7 @@ var MainFrame = React.createClass({
 	checkOutcome: function(card) {
 		// TODO: re-evaluate this.. 
 		if (card.index === 'K' && card.cards.length === 0) {
-			this.updateGameStatus(Helpers.gameStatus.LOSE); 
+			this.updateGameStatus(Helpers.GameStatus.LOSE); 
 		} else {
 			var results = this.state.piles.filter(function(o) {
 				if (o.index !== '-1') {
@@ -108,7 +108,7 @@ var MainFrame = React.createClass({
 			});
 			if (results.length === 11 &&
 				card.cards[0] === 'K') {
-				this.updateGameStatus(Helpers.gameStatus.WIN);
+				this.updateGameStatus(Helpers.GameStatus.WIN);
 			}
 		}
 	}, 
@@ -145,8 +145,8 @@ var MainFrame = React.createClass({
 			);
 		});
 
-		if (this.state.gameStatus === Helpers.gameStatus.WIN || 
-			this.state.gameStatus === Helpers.gameStatus.LOSE) {
+		if (this.state.gameStatus === Helpers.GameStatus.WIN || 
+			this.state.gameStatus === Helpers.GameStatus.LOSE) {
 			statusBox = 
 				<div className="col-xs-12 well status">
 					<h4>{this.state.gameStatus}</h4>
